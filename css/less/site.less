@@ -1,0 +1,158 @@
+@white: #FFFFFF;
+@grey: #CCCCCC;
+@bright: #F2F2F2;
+@dark: #2E2E2E;
+@orange: #FF8000;
+@lighter-orange: #FFB700;
+
+body {
+    background-color: @bright;
+    
+    h1 {
+        font-weight: bold;
+        line-height: 3;
+        margin: 0;
+        @media (max-width: 810px) {
+            font-size: 24px;
+        }
+        @media (max-width: 610px) {
+            font-size: 20px;
+        }
+        @media (max-width: 510px) {
+            font-size: 16px;
+        }
+        @media (max-width: 410px) {
+            font-size: 12px;
+        }
+    }
+
+    h2 {
+        font-size: 1.5em;
+        font-weight: bold;
+        line-height: 1.5;
+        margin: 50px 0 0 0;
+
+        @media (max-width: 370px) {
+            font-size: 1.3em;
+        }
+    }
+
+    h3 {
+        font-size: 1.3em;
+        font-weight: 600;
+        line-height: 2;
+        margin: 0;
+    }
+
+    span.capital-letter {
+        font-size: 2em;
+    }
+
+    div.row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    i.fa {
+        float: left;
+        font-size: 2em;
+        line-height: 1.39;
+        margin: 0 20px 0 5px;
+
+        @media (max-width: 370px) {
+            font-size: 1.3em;
+            margin-top: 10px;
+        }
+    }
+
+    table {
+        @media (max-width: 425px) {
+            font-size: 0.72em;
+        }
+
+        &.table-head {
+            colspan: 2;
+        }
+
+        &.table-striped tbody {
+            tr:nth-child(even) {
+                background-color: @white;
+            }
+        
+            tr:nth-child(odd) {
+                background-color: @grey;
+            }
+        }
+    }
+
+    div.container {  
+        color: @dark;
+        font-family: "courier new";
+        font-size: 1.15em;
+        padding: 0;
+        width: 100%;
+
+        div.title {
+            background-color: @orange;
+            background: linear-gradient(@orange,@lighter-orange);
+            text-align: center;
+        }
+
+        div.about-me {
+
+            div.content-text {
+                font-size: 1.2em;
+                line-height: 1.3;
+                text-align: justify;
+            }
+
+            div.img {
+                margin-top: 30px;
+                overflow:hidden;
+                padding-left: 0;
+
+                :hover {
+                    transform: scale(1.3);
+                }
+
+                img {
+                    height: 256px;
+                    transition: all 0.7s ease;
+
+                    @media (max-width: 992px) {
+                        display: block;
+                        margin: 0 auto;
+                    }
+                }
+            }
+
+            div.profile {
+                line-height: 2.3;
+                margin-top: 30px;
+                padding: 0;
+
+                table.profile-table {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        div.vita {
+            background-color: @orange;
+            background: linear-gradient(@orange,@lighter-orange);
+            margin-top: 50px;
+
+            table {
+                &.vita-table-school {
+                    margin-bottom: 50px;
+                }
+
+                td.left-col {
+                    width: 30%;
+                }
+            }
+        }
+
+    }
+
+}
