@@ -1,0 +1,1 @@
+This is a website presenting the profile of Jonas Bergmann, his vita, his skills and contact posibility.

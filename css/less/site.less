@@ -48,6 +48,10 @@ body {
         font-size: 2em;
     }
 
+    .uc {
+        text-transform: uppercase;
+    }
+
     div.row {
         margin-left: 0;
         margin-right: 0;
@@ -91,6 +95,35 @@ body {
         font-size: 1.15em;
         padding: 0;
         width: 100%;
+
+        div.menu {
+            background-color: @bright;
+            font-weight: bold;
+            position: absolute;
+            width: 100%;
+            z-index: 1;
+
+            ul {
+                margin: 0;
+
+                li {
+                    a {
+                        border: none;
+                        border-radius: 0;
+                        color: @dark;
+
+                        &:hover {
+                            background-color: @grey;
+                            outline: none;
+                        }
+
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+                }
+            }
+        }
 
         div.title {
             background-color: @orange;
@@ -153,6 +186,8 @@ body {
             }
         }
 
+        div.imprint {
+            margin-bottom: 50px;
+        }
     }
-
 }
